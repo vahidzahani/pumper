@@ -19,13 +19,10 @@ This project started as a simple program to retrieve pump and dump signals from 
 
 I am actively looking for developers and traders to contribute to this project. Feel free to submit Pull Requests with bug fixes, new features, or improved strategies.
 
-**License:**
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 **Links:**
 
-* Documentation: [Link to documentation]
-* Binance API: [Link to Binance API documentation]
+* Documentation: config.py
+* Binance API: https://www.binance.com/en/binance-api
 
 I hope this helps! Feel free to adapt this template to your specific needs and project details.
