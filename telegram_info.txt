@@ -1,0 +1,72 @@
+
+https://docs.telethon.dev/en/latest/basic/quick-start.html
+pip install telethon
+
+pip3 show telethon
+
+
+https://my.telegram.org/apps
+
+
+@GetUsernameID_Bot
+
+py -3.7 .\telegram_me.py
+
+//hello tets
+
+🆔 Channel ID: -1001262940660
+👉 Channel Name: telethon_test
+👉 Username: @pumpertest1
+👉 Channel Type: Public
+
+🆔 Channel ID: -1001219293084
+👉 Channel Name: Binance Pump Signals
+👉 Username: @Big_Pumps_Signals
+👉 Channel Type: Public
+
+🆔 Channel ID: -1001448562668
+👉 Channel Name: Crypto Binance Trading | Signals & Pumps
+👉 Username: @Crypto_Binance_Trading
+👉 Channel Type: Public
+
+
+🆔 Channel ID: -1001393214595
+👉 Channel Name: VAHIDTESTPUMP
+👉 Username: @testpump2021
+👉 Channel Type: Public
+
+🆔 Channel ID: -1001330112637
+👉 Channel Name: Today We Push 🛸
+👉 Username: @TodayWePush
+👉 Channel Type: Public
+
+************************************************************************************ TELEGRAM  
+
+App api_id:
+
+XXXXXX
+
+App api_hash:
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Test configuration:
+
+149.154.167.40:443
+
+
+Production configuration:
+
+149.154.167.50:443
+
+
+Public keys:
+
+
+-----BEGIN RSA PUBLIC KEY-----
+***************************
+-----END RSA PUBLIC KEY-----
+
+
+

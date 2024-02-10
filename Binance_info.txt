@@ -1,0 +1,54 @@
+$env:FLASK_APP = "app.py"
+$env:FLASK_ENV = "development"
+flask run
+
+source /home/projfai1/virtualenv/pumper.projfa.ir/3.7/bin/activate && cd /home/projfai1/pumper.projfa.ir
+SET SERVER TIME
+
+https://binance-docs.github.io/apidocs/spot/en/#query-sub-account-assets-for-master-account
+https://flask.palletsprojects.com/en/1.1.x/quickstart/#a-minimal-application
+https://jinja.palletsprojects.com/en/2.11.x/templates/
+https://python-binance.readthedocs.io/en/latest/search.html?q=recvWindow&check_keywords=yes&area=default
+
+Command "c:\users\vahid\appdata\local\programs\python\python37\python.exe -u -c "import setuptools, tokenize;__file__='C:\\Users\\vahid\\AppData\\Local\\Temp\\pip-install-ay0o4rzg\\cryptography\\setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record C:\Users\vahid\AppData\Local\Temp\pip-record-1idjp1vn\install-record.txt --single-version-externally-managed --compile" failed with error code 1 in C:\Users\vahid\AppData\Local\Temp\pip-install-ay0o4rzg\cryptography\
+You are using pip version 10.0.1, however version 21.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+prices = client.get_all_tickers()
+
+
+
+https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe
+https://www.python.org/ftp/python/3.7.0/python-3.7.0.exe
+python -3.7
+
+python -3.7 -m pip install --upgrade pip
+
+
+        =============================DEBUG ASSISTANCE=============================
+        If you are seeing a compilation error please try the following steps to
+        successfully install cryptography:
+        1) Upgrade to the latest pip and try again. This will fix errors for most
+           users. See: https://pip.pypa.io/en/stable/installing/#upgrading-pip
+        2) Read https://cryptography.io/en/latest/installation.html for specific
+           instructions for your platform.
+        3) Check our frequently asked questions for more information:
+           https://cryptography.io/en/latest/faq.html
+        =============================DEBUG ASSISTANCE=============================
+
+
+ImmutableMultiDict([('asset', 'DOGEBTC'), ('amount', '271.00000000')])
+SELL ->  DOGEBTC 0.00000162 271.00000000
+{'symbol': 'DOGEBTC', 'orderId': 49294385, 'orderListId': -1, 'clientOrderId': 'TtQjTgGVoI6RuITDES9wir', 'transactTime': 1612989060594, 'price': '0.00000162', 'origQty': '271.00000000', 'executedQty': '271.00000000', 'cummulativeQuoteQty': '0.00043902', 'status': 'FILLED', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'SELL', 'fills': [{'price': '0.00000162', 'qty': '271.00000000', 'commission': '0.00012014', 'commissionAsset': 'BNB', 'tradeId': 8518661}]}
+
+
+
+
+TIME_IN_FORCE_GTC = 'GTC'
+TIME_IN_FORCE_IOC = 'IOC'
+TIME_IN_FORCE_FOK = 'FOK'
+
+
+Good Till Cancel یا GTC: سفارش تا زمانی که پر شده و یا کنسل شود فعال باقی می‌ماند.
+Immediate Or Cancel یا IOC: سفارش بلافاصله انجام می‌شود( چه کامل پر شده باشد چه بخشی از آن) و در صورت انتخاب این گزینه، فقط بخش پر شده سفارش انجام شده و باقیمانده کنسل می‌شود.
+Fill Or Kill یا FOK: سفارش باید بلافاصله پر شود و اگر اینگونه نشد کنسل گردد.

@@ -1,0 +1,71 @@
+AXSBTC 3.499e-05 0.00003499 8
+**************************************************
+{'symbol': 'AXSBTC', 'orderId': 35457560, 'orderListId': -1, 'clientOrderId': 'fguRmJeHvrYKI7MXALtDvz', 'transactTime': 1614456201447, 'price': '0.00003499', 'origQty': '8.00000000', 'executedQty': '8.00000000', 'cummulativeQuoteQty': '0.00027944', 'status': 'FILLED', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'fills': [{'price': '0.00003493', 'qty': '8.00000000', 'commission': '0.00800000', 'commissionAsset': 'AXS', 'tradeId': 1393870}]}
+
+127.0.0.1 - - [27/Feb/2021 23:33:21] "GET /buy2/AXS/BTC/0.0003 HTTP/1.1" 200 -
+AXS	OK FILLLLLLL  =>>  7.99200000
+
+
+AXSBTC 3.493e-05 0.00003493 8 
+**************************************************
+{'symbol': 'AXSBTC', 'orderId': 35459614, 'orderListId': -1, 'clientOrderId': '6SNRnoMRDZd9tdaX7Q4o3a', 'transactTime': 1614456790639, 'price': '0.00003300', 'origQty': '8.00000000', 'executedQty': '0.00000000', 'cummulativeQuoteQty': '0.00000000', 'status': 'NEW', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'fills': []}
+
+127.0.0.1 - - [27/Feb/2021 23:43:10] "GET /buy2/AXS/BTC/0.0003 HTTP/1.1" 200 -
+
+//////////////////////////////////////////////// ONE COMMAND
+
+
+AXSBTC 3.501e-05 0.00003501 7
+**************************************************
+{'symbol': 'AXSBTC', 'orderId': 35466054, 'orderListId': -1, 'clientOrderId': 'lau2yePYcNNl8y4L7Nkdk9', 'transactTime': 1614458452726, 'price': '0.00003501', 'origQty': '7.00000000', 'executedQty': '7.00000000', 'cummulativeQuoteQty': '0.00024493', 'status': 'FILLED', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'fills': [{'price': '0.00003499', 'qty': '7.00000000', 'commission': '0.00700000', 'commissionAsset': 'AXS', 'tradeId': 1393923}]}
+SELL - >  AXSBTC 0.00003851 6
+{'symbol': 'AXSBTC', 'orderId': 35466056, 'orderListId': -1, 'clientOrderId': 'uKDygcNbTH3bhajTsG807V', 'transactTime': 1614458453134, 'price': '0.00003851', 'origQty': '6.00000000', 'executedQty': '0.00000000', 'cummulativeQuoteQty': '0.00000000', 'status': 'NEW', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'SELL', 'fills': []}
+127.0.0.1 - - [28/Feb/2021 00:10:53] "GET /buy2/AXS/BTC/0.00025 HTTP/1.1" 200 -
+
+----------------------------------------------- 2020 02 07 ------------------------------------------  PPT
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+{'asset': 'BTC', 'free': '0.00198471', 'locked': '0.00000000'}
+{'asset': 'BNB', 'free': '0.01539261', 'locked': '0.00000000'}
+[{'asset': 'BTC', 'free': '0.00198471', 'locked': '0.00000000', 'BTC': 1, 'totalBTC': '0.00198471'}, {'asset': 'BNB', 'free': '0.01539261', 'locked': '0.00000000', 'BTC': '0.00466658', 'totalBTC': '0.00007183'}]
+127.0.0.1 - - [07/Mar/2021 20:28:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Mar/2021 20:28:40] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [07/Mar/2021 20:28:41] "GET /favicon.ico HTTP/1.1" 404 -
+BUY->: PPTBTC 0.00018996 0.00018996 10 
+**************************************************
+{'symbol': 'PPTBTC', 'orderId': 83900902, 'orderListId': -1, 'clientOrderId': 'wngOozrXepwPfipDMrlBoW', 'transactTime': 1615136428067, 'price': '0.00018996', 'origQty': '10.00000000', 'executedQty': '0.00000000', 'cummulativeQuoteQty': '0.00000000', 'status': 'NEW', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'fills': []}
+SELL - >  PPTBTC 0.00022795 9
+{'symbol': 'PPTBTC', 'orderId': 83901323, 'orderListId': -1, 'clientOrderId': 'cXZIMjXU95z6pwLjGPklf4', 'transactTime': 1615136428472, 'price': '0.00022795', 'origQty': '9.00000000', 'executedQty': '0.00000000', 'cummulativeQuoteQty': '0.00000000', 'status': 'NEW', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'SELL', 'fills': []}
+127.0.0.1 - - [07/Mar/2021 20:30:28] "GET /buy2/PPT/BTC/0.00033 HTTP/1.1" 200 -
+{'asset': 'BTC', 'free': '0.00213666', 'locked': '0.00000000'}
+{'asset': 'BNB', 'free': '0.01472550', 'locked': '0.00000000'}
+{'asset': 'PPT', 'free': '1.00000000', 'locked': '0.00000000'}
+[{'asset': 'BTC', 'free': '0.00213666', 'locked': '0.00000000', 'BTC': 1, 'totalBTC': '0.00213666'}, {'asset': 'BNB', 'free': '0.01472550', 'locked': '0.00000000', 'BTC': '0.00466626', 'totalBTC': '0.00006871'}, {'asset': 'PPT', 'free': '1.00000000', 'locked': 
+'0.00000000', 'BTC': '0.00016775', 'totalBTC': '0.00016775'}]
+127.0.0.1 - - [07/Mar/2021 20:31:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Mar/2021 20:31:20] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [07/Mar/2021 20:31:21] "GET /favicon.ico HTTP/1.1" 404 -
+{'asset': 'BTC', 'free': '0.00213666', 'locked': '0.00000000'}
+{'asset': 'BNB', 'free': '0.01472550', 'locked': '0.00000000'}
+{'asset': 'PPT', 'free': '1.00000000', 'locked': '0.00000000'}
+[{'asset': 'BTC', 'free': '0.00213666', 'locked': '0.00000000', 'BTC': 1, 'totalBTC': '0.00213666'}, {'asset': 'BNB', 'free': '0.01472550', 'locked': '0.00000000', 'BTC': '0.00465988', 'totalBTC': '0.00006862'}, {'asset': 'PPT', 'free': '1.00000000', 'locked': 
+'0.00000000', 'BTC': '0.00015903', 'totalBTC': '0.00015903'}]
+127.0.0.1 - - [07/Mar/2021 20:32:29] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Mar/2021 20:32:29] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [07/Mar/2021 20:32:31] "GET /favicon.ico HTTP/1.1" 404 -
+{'asset': 'BTC', 'free': '0.00223821', 'locked': '0.00000000'}
+{'asset': 'BNB', 'free': '0.01470941', 'locked': '0.00000000'}
+[{'asset': 'BTC', 'free': '0.00223821', 'locked': '0.00000000', 'BTC': 1, 'totalBTC': '0.00223821'}, {'asset': 'BNB', 'free': '0.01470941', 'locked': '0.00000000', 'BTC': '0.00465890', 'totalBTC': '0.00006853'}]
+127.0.0.1 - - [07/Mar/2021 20:32:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Mar/2021 20:32:56] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [07/Mar/2021 20:32:57] "GET /favicon.ico HTTP/1.1" 404 -
+{'asset': 'BTC', 'free': '0.00223821', 'locked': '0.00000000'}
+{'asset': 'BNB', 'free': '0.01470941', 'locked': '0.00000000'}
+[{'asset': 'BTC', 'free': '0.00223821', 'locked': '0.00000000', 'BTC': 1, 'totalBTC': '0.00223821'}, {'asset': 'BNB', 'free': '0.01470941', 'locked': '0.00000000', 'BTC': '0.00465778', 'totalBTC': '0.00006851'}]
+127.0.0.1 - - [07/Mar/2021 20:33:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [07/Mar/2021 20:33:35] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [07/Mar/2021 20:33:36] "GET /favicon.ico HTTP/1.1" 404 -
+{'asset': 'BTC', 'free': '0.00223821', 'locked': '0.00000000'}
+{'asset': 'BNB', 'free': '0.01470941', 'locked': '0.00000000'}
+[{'asset': 'BTC', 'free': '0.00223821', 'locked': '0.00000000', 'BTC': 1, 'totalBTC': '0.00223821'}, {'asset': 'BNB', 'free': '0.01470941', 'locked': '0.00000000', 'BTC': '0.00464861', 'totalBTC': '0.00006838'}]
+
+

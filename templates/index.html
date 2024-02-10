@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    function checkSubmit(e) {
+        if (e && e.keyCode == 13) {
+            document.forms[0].submit();
+        }
+    }
+    function calculator_usdt(obj) {
+
+        //document.getElementById("usdtbox").value=parseFloat(obj.value);
+        if (obj.alt == "BTC") {
+            document.getElementById("usdtbox").value = parseInt(parseFloat(obj.value) * parseFloat(document.getElementById("id_btcusdt").innerHTML));
+        }
+        if (obj.alt == "USDT") {
+            document.getElementById("BIT").value = (parseFloat(obj.value) / parseFloat(document.getElementById("id_btcusdt").innerHTML)).toFixed(8);
+        }
+
+    }
+</script>
+<form action="/buy" method="POST">
+    <label>BUY:</label><input type="text" name="asset" onKeyPress="return checkSubmit(event)"><select name="asset2">
+        <option value="BTC">BTC</option>
+        <option value="USDT">USDT</option>
+    </select>
+    <label>BTC - > </label> <input type="text" name="BIT" id="BIT" alt="BTC" value="0.0005"
+        onkeyup="javascript:calculator_usdt(this);">
+    <label>USDT - > </label> <input type="text" id="usdtbox" alt="USDT" value="0"
+        onkeyup="javascript:calculator_usdt(this);"><br>
+    <label>BTCUSDT:</label><strong style="color: darkviolet;" id="id_btcusdt">{{BTCUSDT}}</strong>$
+
+</form>
+<section>
+    <h3>Balances:</h3>
+    <div id="my_balances">
+        Balance : <strong style="color: brown;">{{SUMBTC}} BTC - <strong
+                style="font-size: x-large;font-weight: bold;">{{'%0.2f' % (SUMBTC|float*BTCUSDT|float)}}
+                $</strong></strong>
+        <table border="1" class="table table-striped table-bordered">
+            <tr style="font-weight: bold;text-align: center;">
+                <td>Asset</td>
+                <td>Amount</td>
+                <td>Price/btc</td>
+                <td>total(BTC)</td>
+                <td>$</td>
+                <td>Sell To </td>
+            </tr>
+            {% for balance in my_balances %}
+            <tr>
+                <td>{{balance['asset']}}</td>
+                <td><span id="{{balance['asset']}}_amount">{{balance['free']}}</span></td>
+                <td>{{balance['BTC']}}</td>
+                <td>{{balance['totalBTC']}}</td>
+                <td><span id="{{balance['asset']}}_USDT">{{'%0.3f' % (balance['totalBTC']|float*BTCUSDT)}}</span></span>
+                </td>
+                <td>
+                    {%if balance['asset']!="BTC" and balance['asset']!="USDT" %}<a
+                        href="/sell/{{balance['asset']}}BTC/{{balance['free']}}"
+                        class="btn btn-sm btn-warning">BTC</a>{%endif%}
+                    {%if balance['asset']!="USDT" %}<a href="#" class="btn btn-sm btn-success">USDT</a>{%endif%}
+                    {%if balance['asset']=="USDT" %}<a href="/buy?asset=BTCUSDT&amount={{balance['free']}}"
+                        class="btn btn-sm btn-danger">BUYBTC</a>{%endif%}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</section>
+<section>
+    <h3>Open Orders</h3>
+    <div id="my_orders">
+        <table border="1" class="table table-striped table-bordered">
+            <tr>
+                <th>orderId</th>
+                <th>symbol</th>
+                <th>price</th>
+                <th>origQty</th>
+                <th>side</th>
+                <th>stopPrice</th>
+                <th>executedQty</th>
+                <th>Time</th>
+                <th>command</th>
+            </tr>
+            {% for order in my_orders %}
+            <tr class="{% if order['side']==" SELL"%}table-danger{%endif%}{% if order['side']=="BUY"
+                %}table-success{%endif%}">
+                <td>{{order['orderId']}}</td>
+                <td>{{order['symbol']}}</td>
+                <td>{{order['price']}}</td>
+                <td>{{order['origQty']}}</td>
+                <td>{{order['side']}}</td>
+                <td>{{order['stopPrice']}}</td>
+                <td>{{order['executedQty']}}</td>
+                <td>{{order['time']}}</td>
+                <td><a href="/cancel_order/{{order['symbol']}}/{{order['orderId']}}"><span>Cancel</span></a></td>
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+</section>
+<script>
+    var exampleSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
+
+    exampleSocket.onmessage = function (event) {
+        var msg = JSON.parse(event.data);
+        //console.log(msg['p']);
+        document.getElementById("id_btcusdt").innerHTML = msg['p'];
+        document.getElementById("BTC_USDT").innerHTML = (document.getElementById("BTC_amount").innerHTML * msg['p']).toFixed(2);
+    }
+</script>
+{% endblock %}
